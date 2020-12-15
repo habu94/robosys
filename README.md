@@ -13,9 +13,13 @@
  ```bash
   git clone https://github.com/habu94/robosys.git
  ```
- 下記コマンドでカーネルモジュールが作成されます（警告は無視）
+ ディレクトリに入り
   ```bash
   cd myled
+  ```
+ ラズパイ3の場合はmyled.c内を117行目の記述通りに変更
+ 下記コマンドでカーネルモジュールが作成されます（警告は無視）
+  ```bash
   make
   ```
 ## 回路構築
@@ -40,5 +44,8 @@
   sudo insmod 
  ```
  ```bash
+  sudo chmod 666
+ ```
+```bash
   sudo chmod 666
  ```
