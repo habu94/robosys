@@ -43,12 +43,22 @@
 ```bash
   sudo insmod myled.ko
 ```
+ノードを作成
 ```bash
   sudo mknod /dev/myled0 c 507 0
 ```
+許可を変更
 ```bash
   sudo chmod 666 /dev/myled0
 ```
+以下のコマンドを打ち回路が正しければLEDが点きます
 ```bash
   echo 1 > /dev/myled0
+```
+削除
+```bash
+  sudo rm /dev/myled0
+```
+```bash
+  sudo rmmod myled
 ```
