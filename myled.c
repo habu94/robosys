@@ -114,7 +114,7 @@ static int __init init_mod(void)
 
 	device_create (cls, NULL, dev, NULL, "myled%d", MINOR(dev));
 	
-	gpio_base_a = ioremap_nocache(0xfe200000, 0xA0);//ラズパイ3の場合は"0x3fe200000"に変更
+	gpio_base_a = ioremap_nocache(0xfe200000, 0xA0);//ラズパイ3の場合はaからgまで"0x3fe200000"に変更
   gpio_base_b = ioremap_nocache(0xfe200000, 0xA0);
 	gpio_base_c = ioremap_nocache(0xfe200000, 0xA0);
   gpio_base_d = ioremap_nocache(0xfe200000, 0xA0);
