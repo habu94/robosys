@@ -39,13 +39,16 @@
 と、間に抵抗を介してつなげます。3, 8ピンはブレッドボード側で1つのGNDにまとめ、ラズパイのGNDとつなげます。
 
 ## プログラムの実行
-下記コマンドを順に実行して回路が正しければLEDが点きます
- ```bash
-  sudo insmod 
- ```
- ```bash
-  sudo chmod 666
- ```
+下記コマンドを順に実行します。まず
 ```bash
-  sudo chmod 666
- ```
+  sudo insmod myled.ko
+```
+```bash
+  sudo mknod /dev/myled0 c 507 0
+```
+```bash
+  sudo chmod 666 /dev/myled0
+```
+```bash
+  echo 1 > /dev/myled0
+```
