@@ -13,6 +13,7 @@
  ```bash
   git clone https://github.com/habu94/robosys.git
  ```
+ 下記コマンドでカーネルモジュールが作成されます
   ```bash
   cd myled
   make
