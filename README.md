@@ -9,7 +9,7 @@
 - ジャンパ線 ×複数
 
 ## プログラムのインストール
-下記コマンドを実行
+ラズパイにログインし下記コマンドを実行
  ```bash
   git clone https://github.com/habu94/robosys.git
  ```
