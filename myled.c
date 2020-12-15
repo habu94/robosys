@@ -7,7 +7,7 @@
 #include <linux/delay.h>
 
 MODULE_AUTHOR("Ryuichi Ueda and Kosuke Habu");
-MODULE_DESCRIPTION("driver for LED control");
+MODULE_DESCRIPTION("driver for 7-SEGMENT LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
 
@@ -114,7 +114,7 @@ static int __init init_mod(void)
 
 	device_create (cls, NULL, dev, NULL, "myled%d", MINOR(dev));
 	
-	gpio_base_a = ioremap_nocache(0xfe200000, 0xA0);
+	gpio_base_a = ioremap_nocache(0xfe200000, 0xA0);//ラズパイ3の場合は"0x3fe200000"に変更
   gpio_base_b = ioremap_nocache(0xfe200000, 0xA0);
 	gpio_base_c = ioremap_nocache(0xfe200000, 0xA0);
   gpio_base_d = ioremap_nocache(0xfe200000, 0xA0);
