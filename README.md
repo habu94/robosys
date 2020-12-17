@@ -10,6 +10,8 @@
   - 7セグメントLEDの許容電流とGPIOの電圧3.3Vを考慮して選択
 - ジャンパ線 ×複数
 
+![7seg](https://user-images.githubusercontent.com/55973880/102452389-a0ee6600-407d-11eb-86ed-51d29dca98ad.jpg)
+
 ## プログラムのインストール
 ラズパイにログインし下記コマンドを実行
  ```bash
