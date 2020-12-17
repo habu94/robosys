@@ -42,8 +42,7 @@
 
 と、間に抵抗を介してつなげます。3, 8ピンはブレッドボード側で1つのGNDにまとめ、ラズパイのGNDとつなげます。  
 見ずらいですが、接続した画像を載せておきます。
-
-![kairo](https://user-images.githubusercontent.com/55973880/102452928-997b8c80-407e-11eb-887c-d91b949f6e76.jpg)
+<img src="https://user-images.githubusercontent.com/55973880/102452928-997b8c80-407e-11eb-887c-d91b949f6e76.jpg" width="640">
 
 ## プログラムの実行
 下記コマンドを順に実行します。
